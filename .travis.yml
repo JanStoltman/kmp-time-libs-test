@@ -2,7 +2,7 @@ os: osx
 osx_image: xcode11.3
 
 language: android
-dist: trusty
+dist: xenial
 
 jdk:
   - oraclejdk8
