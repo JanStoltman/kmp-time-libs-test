@@ -10,6 +10,14 @@ plugins {
 repositories {
     mavenCentral()
 }
+
+allprojects {
+    repositories {
+        google() // and here
+        jcenter()
+    }
+}
+
 group = "com.example"
 version = "0.0.1"
 
@@ -81,7 +89,7 @@ tasks.register("debugFatFramework", FatFrameworkTask::class) {
 
 // Enough settings to gradle sync, but more can be added
 android {
-    compileSdkVersion = "29"
+    setCompileSdkVersion(28)
 }
 
 if (HostManager.hostIsMac) {
