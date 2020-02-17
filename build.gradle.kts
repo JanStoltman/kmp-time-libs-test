@@ -43,6 +43,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                implementation("com.soywiz.korlibs.klock:klock:1.8.8")
                 implementation(kotlin("stdlib-common"))
             }
         }
