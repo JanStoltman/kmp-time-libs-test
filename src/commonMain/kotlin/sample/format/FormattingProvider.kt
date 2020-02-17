@@ -1,5 +1,11 @@
 package sample.format
 
-val formattingProviders = listOf<FormattingProvider>()
+import sample.format.klock.KlockFormattingProvider
 
-interface FormattingProvider
+val formattingProviders = listOf<FormattingProvider>(
+    KlockFormattingProvider()
+)
+
+interface FormattingProvider {
+    fun formatStringToRawDateModel(rawDateTimeString: String, format: RawDateFormat): RawDateModel
+}
