@@ -1,3 +1,13 @@
 .idea
 .gradle
 build
+/com.example.KotlinMobileBootstrap.commonMain.iml
+/com.example.KotlinMobileBootstrap.commonTest.iml
+/com.example.KotlinMobileBootstrap.iosArm64Main.iml
+/com.example.KotlinMobileBootstrap.iosArm64Test.iml
+/com.example.KotlinMobileBootstrap.iosMain.iml
+/com.example.KotlinMobileBootstrap.iosTest.iml
+/com.example.KotlinMobileBootstrap.iosX64Main.iml
+/com.example.KotlinMobileBootstrap.iosX64Test.iml
+/KotlinMobileBootstrap.iml
+/local.properties
