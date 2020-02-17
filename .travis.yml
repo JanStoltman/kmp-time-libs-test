@@ -1,19 +1,6 @@
 os: osx
 osx_image: xcode11.3
 
-language: android
-dist: xenial
-
-jdk:
-  - oraclejdk8
-
-android:
-  components:
-    - tools
-    - platform-tools
-    - build-tools-28.0.3
-    - android-28
-before_install:
-  - yes | sdkmanager "platforms;android-28"
 script:
-  - ./gradlew build
+  - ./gradlew linkDebugTestIosArm64
+  - ./gradlew iosTest
